@@ -1,0 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  img {
+    @apply w-full;
+  }
+
+  .section {
+    @apply py-24 px-6;
+  }
+
+  .full-width {
+    width: 100%;
+  }
+
+  .animate-slide:hover {
+    animation-play-state: paused;
+  }
+}
