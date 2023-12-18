@@ -52,14 +52,6 @@ const Home = () => {
           <p className="text-sm leading-7 max-w-sm">
             Deliver excellence services and forge partnerships that have a global impact.
           </p>
-          <div className="mt-6">
-            <button className="px-6 py-3 font-bold text-white bg-Teal rounded-lg mr-4 text-sm">
-              Get Started
-            </button>
-            <button className="px-6 py-3 font-bold border border-solid border-gray rounded-lg text-sm text-white">
-              Discover
-            </button>
-          </div>
         </motion.div>
         <motion.div variants={itemVariants} className="md:w-[60%]"></motion.div>
       </motion.div>

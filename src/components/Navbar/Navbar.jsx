@@ -4,6 +4,7 @@ import { HiMenuAlt1, HiX } from "react-icons/hi";
 import MobileNavLinks from "./MobileNavLinks";
 import NavLink from "./NavLink";
 import { motion } from "framer-motion";
+import Logo from "../../../src/assets/indonautics.png";
 
 const Navbar = () => {
   const [toggle, setToggle] = useState(false);
@@ -37,7 +38,7 @@ const Navbar = () => {
             />
             <div className="text-xl text-Teal uppercase tracking-wide font-bold">
               <img
-                src="../../../src/assets/indonautics.png"
+                src={Logo}
                 alt=""
                 style={{ width: '75px', height: '75px' }}
               />

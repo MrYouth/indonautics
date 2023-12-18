@@ -1,8 +1,9 @@
 import React from "react";
 import { motion } from "framer-motion";
+import Images from "../../../src/assets/Transition.png"
 
 const sectionStyle = {
-  backgroundImage: `url('../../../src/assets/Transition.png')`, // Set the path to your image
+  backgroundImage: `url(${Images})`, // Set the path to your image
   backgroundSize: 'cover',
   backgroundPosition: 'center',
   display: 'flex',

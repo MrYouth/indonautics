@@ -1,5 +1,9 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { motion } from 'framer-motion';
+import Images1 from "../../../../src/assets/images1.jpg"
+import Images2 from "../../../../src/assets/images2.jpg"
+import Images3 from "../../../../src/assets/images3.jpg"
+import Images4 from "../../../../src/assets/images4.jpg"
 
 const Services = () => {
   const [selectedService, setSelectedService] = useState(null);
@@ -76,13 +80,13 @@ const Services = () => {
           </ul>
         </div>
       ),
-      image: '../../../src/assets/images1.jpg', // Replace with the actual path to your image
+      image: [Images1], // Replace with the actual path to your image
     },
     {
       id: 2,
       title: 'Maintenance, Repair & Overhaul',
       description: 'Maintenances, repairs, & overhauls are of the core services of IndoNautics. With deep technical and engineering skills, we are able to quickly analyze requirements and get down to completing the job.  We have reliable and professional teams in their own respective fields, for what we can repair including Main Engines, Auxiliary Engines, Boilers, Winches, Navigation System, Electrical & Automation System, Electrical Panels & Power Distribution, Inert Gas Systems, Cranes, Compressors, etc.',
-      image: '../../../src/assets/images2.jpg', // Replace with the actual path to your image
+      image: [Images2], // Replace with the actual path to your image
     },
     {
       id: 3,
@@ -98,13 +102,13 @@ const Services = () => {
           </ul>
         </div>
       ),
-      image: '../../../src/assets/images3.jpg', // Replace with the actual path to your image
+      image: [Images3], // Replace with the actual path to your image
     },
     {
       id: 4,
       title: 'Upgrades & Retrofits',
       description: 'Our team is highly experienced in carrying out Upgrades and Retrofits efficiently. System Retrofits and Upgrades including Detailed Inspection, Planning, System Engineering and Class Approvals, System Integration and Build Up, Removal of Existing Panels and Instrumentation and Installation of the new Systems. To maintain vessel utilization to the maximum, our team can plan and carry out such upgrades and retrofits during the voyage with the least interruption to normal vessel operations.',
-      image: '../../../src/assets/images4.jpg', // Replace with the actual path to your image
+      image: [Images4], // Replace with the actual path to your image
     },
   ];
 
