@@ -46,10 +46,10 @@ const Home = () => {
             PT.SOLUSI NAUTIKA INDONESIA
           </div>
 
-          <div className="sm:text-[2.5rem] text-[1.825rem] font-bold">
+          <div className="sm:text-[2.5rem] text-[1.825rem] font-bold text-black">
             Supporting Your Vessel Needs
           </div>
-          <p className="text-sm leading-7 max-w-sm">
+          <p className="text-sm leading-7 max-w-sm text-black">
             Deliver excellence services and forge partnerships that have a global impact.
           </p>
         </motion.div>

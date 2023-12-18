@@ -1,6 +1,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { FaInstagram, FaLinkedin, FaFacebook, FaClock, FaPhone, FaEnvelope, FaMapMarkerAlt } from 'react-icons/fa';
+import Logo from "../../../src/assets/indonauticsLogo.png";
 
 const Footer = () => {
   const containerVariants = {
@@ -24,7 +25,7 @@ const Footer = () => {
       <motion.div className="flex flex-col items-center mb-6">
         {/* Logo */}
         <motion.img
-          src="../../../src/assets/indonauticsLogo.png"
+          src={Logo}
           alt="Logo"
           className="w-80 mb-2"
           variants={iconVariants}
