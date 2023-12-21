@@ -28,6 +28,11 @@ const itemVariants = {
   visible: { y: 0, opacity: 1 },
 };
 
+const textVariants = {
+  hidden: { y: 20, opacity: 0 },
+  visible: { y: 0, opacity: 1 },
+};
+
 const CarouselImage = () => {
   return (
     <motion.div
@@ -35,10 +40,19 @@ const CarouselImage = () => {
       id="courses"
       variants={containerVariants}
       initial="hidden"
-      whileInView="visible"
+      animate="visible"
       style={{ margin: '20px 0', padding: '20px' }}
     >
-      <h1 style={{ fontSize: '2em', fontWeight: 'bold' }}>Check out our latest work</h1>
+      <motion.h1
+        style={{
+          fontSize: '2em',
+          fontWeight: 'bold',
+          marginBottom: '50px', // Adjusted margin for better spacing
+        }}
+        variants={textVariants}
+      >
+        Check out our latest work
+      </motion.h1>
       <motion.div style={{ maxWidth: '70%' }} className="mx-auto">
         <Carousel>
           {[
@@ -51,7 +65,7 @@ const CarouselImage = () => {
           ].map((image, index) => (
             <Carousel.Item key={index}>
               <img
-                style={{ maxWidth: '100%', height: 'auto', maxHeight: '100vh' }}  // Adjusted maxHeight for mobile view
+                style={{ maxWidth: '100%', height: 'auto', maxHeight: '100vh' }}
                 className="d-block w-100"
                 src={image.src}
                 alt={image.alt}

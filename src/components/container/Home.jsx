@@ -42,7 +42,7 @@ const Home = () => {
           variants={itemVariants}
           className="text-white"
         >
-          <div className="font-bold text-xs text-red-500 mb-4">
+          <div className="font-bold text-xs text-white mb-4">
             PT.SOLUSI NAUTIKA INDONESIA
           </div>
 

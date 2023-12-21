@@ -44,7 +44,7 @@ const Navbar = () => {
               />
             </div>
           </div>
-          <div className="sm:flex items-center hidden">
+          <div className="sm:flex items-center hidden text-white">
             {navLinks.map((navLink) => {
               return (
                 <NavLink
